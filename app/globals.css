@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+                              /* Primary */
+.bg-primary {
+  background-color: rgb(15,76,117);
+}
+.bg-primary-dark {
+  background-color: rgb(15, 76, 92);
+}
+.bg-sub {
+  background-color: rgb(233, 236, 239,0.9);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+                             /* Secondary */
+.bg-secondary {
+  background-color: rgb(245, 158, 11);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+                               /* Text*/
+.text-main {
+  color: rgb(31, 41, 55);
+}
+.text-sub {
+  color: rgb(233, 236, 239);
+}
+.text-muted {
+  color: rgb(248, 249, 250);
+}
+.text-secondary {
+  color: rgb(245, 158, 11);
+}
+.text-primary {
+  color: rgb(15,76,117);
+}
+.text-primary-dark {
+  color: rgb(15, 76, 92);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+body{
+  padding:0;
+  margin:0;
+ overflow-x:hidden;
+}
+
+.bg-hero {
+    background: linear-gradient(
+    to right,
+    rgba(245,158,11),
+    rgba(245,158,11,0.8),
+    rgba(245,158,11, 0.1)
+  );
 }
